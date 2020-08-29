@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Foreign Exchange Rate</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary">
+      <span class="navbar-brand mb-0 h1 p-2">Foreign Exchange Rate</span>
+    </nav>
+    <p class="form-text text-muted mb-0 h1 p-2"> </p>
+    <!-- <p class="form-text text-muted mb-0 h1 p-2">{{ p1 }} has {{ numm1 }} followers </p>
+    <p class="form-text text-muted mb-0 h1 p-2">{{ p2 }} has {{ numm2 }} followers </p> -->
+
+          
+    <!-- <form name="data" action="." method="post">
+        <div class="d-flex justify-content-center">
+          <p>!</p>
+          <p class="mb-0 h1 p-2"><button type="submit" class="btn btn-info btn-lg" name="name1" value="{{p1}} {{p2}}">{{ p1 }}</button>
+          <button type="submit" class="btn btn-info btn-lg" name="name1" value="{{p2}} {{p1}}">{{ p2 }}</button></p>
+        </div>
+    </form> -->
+    <div class="row m-2">
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-1-list" data-toggle="list" href="#list-1" role="tab" aria-controls="home">American Dollar (USD)</a>
+          <a class="list-group-item list-group-item-action" id="list-2-list" data-toggle="list" href="#list-2" role="tab" aria-controls="profile">Indian Rupees (INR)</a>
+          <a class="list-group-item list-group-item-action" id="list-3-list" data-toggle="list" href="#list-3" role="tab" aria-controls="messages">Euros (EUR)</a>
+          <a class="list-group-item list-group-item-action" id="list-4-list" data-toggle="list" href="#list-4" role="tab" aria-controls="settings">Great Britain Pound (GBP)</a>
+          <a class="list-group-item list-group-item-action" id="list-5-list" data-toggle="list" href="#list-5" role="tab" aria-controls="profile">Swiss Franc (CHF)</a>
+          <a class="list-group-item list-group-item-action" id="list-6-list" data-toggle="list" href="#list-6" role="tab" aria-controls="messages">Australian Dollar (AUD)</a>
+          <a class="list-group-item list-group-item-action" id="list-7-list" data-toggle="list" href="#list-7" role="tab" aria-controls="settings">Canadian Dollar (CAD)</a>
+          <a class="list-group-item list-group-item-action" id="list-8-list" data-toggle="list" href="#list-8" role="tab" aria-controls="profile">Singapore Dollar (SGD)</a>
+          <a class="list-group-item list-group-item-action" id="list-9-list" data-toggle="list" href="#list-9" role="tab" aria-controls="messages">Yen (JPY)</a>
+          <a class="list-group-item list-group-item-action" id="list-10-list" data-toggle="list" href="#list-10" role="tab" aria-controls="settings">Saudi Riyal (SAR)</a>
+          <a class="list-group-item list-group-item-action" id="list-11-list" data-toggle="list" href="#list-11" role="tab" aria-controls="profile">Qatari Rial	(QAR)</a>
+          <a class="list-group-item list-group-item-action" id="list-12-list" data-toggle="list" href="#list-12" role="tab" aria-controls="messages">Baht (THB)</a>
+          <a class="list-group-item list-group-item-action" id="list-13-list" data-toggle="list" href="#list-13" role="tab" aria-controls="settings">UAE Dirham	(AED)</a>
+          <a class="list-group-item list-group-item-action" id="list-14-list" data-toggle="list" href="#list-14" role="tab" aria-controls="profile">Malaysian Ringgit	(MYR)</a>
+          <a class="list-group-item list-group-item-action" id="list-15-list" data-toggle="list" href="#list-15" role="tab" aria-controls="messages">Won (KRW)</a>
+          <a class="list-group-item list-group-item-action" id="list-16-list" data-toggle="list" href="#list-16" role="tab" aria-controls="settings">Swedish Krona (SEK)</a>
+          <a class="list-group-item list-group-item-action" id="list-17-list" data-toggle="list" href="#list-17" role="tab" aria-controls="profile">Danish Krone (DKK)</a>
+          <a class="list-group-item list-group-item-action" id="list-18-list" data-toggle="list" href="#list-18" role="tab" aria-controls="messages">Hong Kong Dollar	(HKD)</a>
+          <a class="list-group-item list-group-item-action" id="list-19-list" data-toggle="list" href="#list-19" role="tab" aria-controls="settings">Bahraini Dinar	(BHD)</a>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-1" role="tabpanel" aria-labelledby="list-1-list">1 USD is equivalent to {{usd}} NPR. </div>
+          <div class="tab-pane fade" id="list-2" role="tabpanel" aria-labelledby="list-2-list">100 INR is equivalent to {{inr}} NPR.</div>
+          <div class="tab-pane fade" id="list-3" role="tabpanel" aria-labelledby="list-3-list">1 EUR is equivalent to {{eur}} NPR.</div>
+          <div class="tab-pane fade" id="list-4" role="tabpanel" aria-labelledby="list-4-list">1 GBP is equivalent to {{gbp}} NPR.</div>
+          <div class="tab-pane fade" id="list-5" role="tabpanel" aria-labelledby="list-5-list">1 CHF is equivalent to {{chf}} NPR.</div>
+          <div class="tab-pane fade" id="list-6" role="tabpanel" aria-labelledby="list-6-list">1 AUD is equivalent to {{aud}} NPR.</div>         
+          <div class="tab-pane fade" id="list-7" role="tabpanel" aria-labelledby="list-7-list">1 CAD is equivalent to {{cad}} NPR.</div>
+          <div class="tab-pane fade" id="list-8" role="tabpanel" aria-labelledby="list-8-list">1 SGD is equivalent to {{sgd}} NPR.</div>
+          <div class="tab-pane fade" id="list-9" role="tabpanel" aria-labelledby="list-9-list">10 JPY is equivalent to {{jpy}} NPR.</div>
+          <div class="tab-pane fade" id="list-10" role="tabpanel" aria-labelledby="list-10-list">1 SAR is equivalent to {{sar}} NPR.</div>
+          <div class="tab-pane fade" id="list-11" role="tabpanel" aria-labelledby="list-11-list">1 QAR is equivalent to {{qar}} NPR.</div>
+          <div class="tab-pane fade" id="list-12" role="tabpanel" aria-labelledby="list-12-list">1 THB is equivalent to {{thb}} NPR.</div>
+          <div class="tab-pane fade" id="list-13" role="tabpanel" aria-labelledby="list-13-list">1 AED is equivalent to {{aed}} NPR.</div>
+          <div class="tab-pane fade" id="list-14" role="tabpanel" aria-labelledby="list-14-list">1 MYR is equivalent to {{myr}} NPR.</div>
+          <div class="tab-pane fade" id="list-15" role="tabpanel" aria-labelledby="list-15-list">100 KRW is equivalent to {{krw}} NPR.</div>
+          <div class="tab-pane fade" id="list-16" role="tabpanel" aria-labelledby="list-16-list">1 SEK is equivalent to {{sek}} NPR.</div>
+          <div class="tab-pane fade" id="list-17" role="tabpanel" aria-labelledby="list-17-list">1 DKK is equivalent to {{dkk}} NPR.</div>
+          <div class="tab-pane fade" id="list-18" role="tabpanel" aria-labelledby="list-18-list">1 HKD is equivalent to {{hkd}} NPR.</div>
+          <div class="tab-pane fade" id="list-19" role="tabpanel" aria-labelledby="list-19-list">1 BHD is equivalent to {{bhd}} NPR.</div>
+        </div>
+      </div>
+    </div>
+    
+<!-- 
+    {% if words!= 15 %}
+      <p class="form-text text-muted"></p>
+    {% else %} -->
+    <!-- <p class="form-text text-muted">{{ p }} has {{ numm }} followers </p> -->
+    <!-- <p class="form-text text-muted">{{ p2 }} has {{ numm2 }} followers </p> -->
+
+    <!-- {% endif %}     -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
